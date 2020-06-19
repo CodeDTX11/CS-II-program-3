@@ -1,0 +1,72 @@
+ /*
+    File: program3_dm1478.cpp
+
+    Author: Dylan Messerly
+    Date: 6/22/2020
+    Assignment Number: 3
+    CS 2308.501 Summer 2020
+    Instructor: Dr. Palacios
+
+
+    des....
+*/
+
+#include <iostream>
+#include <iomanip>
+#include <fstream>
+#include "PasswordManager.h"
+
+using namespace std;
+
+const int NUM_USERS = 3;
+
+
+int main ()
+{
+    string id, pwd;
+    int i = 0;
+
+    PasswordManager k;
+
+    ifstream fin;
+    fin.open("passwords.txt");
+
+    if(!fin)
+    {
+        cout << "Input file does not exist";
+
+        return -1;
+    }
+
+
+    fin.close();
+
+    cout << "Password requirements: " << endl
+         << "1. Must be a minimum of 8 characters" << endl
+         << "2. Must contain at least 1 uppercase letter" << endl
+         << "3. Must contatin at least 1 lowercass letter" << endl
+         << "4. Must contatin at least 1 digit" << endl << endl
+
+         << "Please enter your username: ";
+
+
+
+//    cin >> user.setUsername( );
+//    cout << endl << "Please enter your old password: ";
+//    cin >> user.authenticate();
+//    cout << endl << "Please enter your new password: ";
+//    cin >> user.setNewPassword();
+
+
+
+
+
+
+    ofstream fout;
+    fout.open("passwords.txt");
+
+
+
+
+    return 0;
+}
